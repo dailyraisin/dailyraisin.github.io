@@ -19,6 +19,20 @@
             .tagline {
                 margin-bottom: 48px;
             }
+            h1 {
+                font-weight: 400;
+            }
+            h2 {
+                margin-top: 56px;
+                font-weight: 400;
+                color: #777;
+            }
+            li {
+                margin-bottom: 16px;
+            }
+            .settings img {
+                margin-top: 32px;
+            }
         </style>
         <link href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400" rel="stylesheet" type="text/css">
     </head>
@@ -30,19 +44,29 @@
             <em>Your UI Sidekick</em>
             </p>
 
-            <p><strong>Usage method 1:</strong> Include the styles and Javascript in your page via NPM</p>
+            <img src="images/demo.png">
+
+            <h2>Overview</h2>
+            <p>Kayto is a minimal 12 column layout grid. It’s customizable. It’s got a debugging widget.</p>
+            <p>The fixed width columns touch. I.e. no margins. The gutters are built with padding and are the responsibility of the column itself.
+            </p>
+
+            <h2>Usage</h2>
+            <p><em>Usage method 1:</em> Include the styles and Javascript in your page via NPM.</p>
             <pre><code>npm install kayto</code></pre>
             <pre><code>&lt;link href="node_modules/kayto/dist/kayto.css" rel="stylesheet"&gt;
 &lt;script src="node_modules/kayto/dist/kayto.js" type="text/javascript"&gt;&lt;/script&gt;</code></pre>
             <br/>
 
-            <p><strong>Usage method 2:</strong> Include in a live site via Greasemonkey</p>
+            <p><em>Usage method 2:</em> Include in a live site via Greasemonkey.</p>
             <ol>
                 <li>Install the Greasemonkey Firefox add-on.</li>
                 <li>Navigate to <a href="https://github.com/dailyraisin/kayto/blob/v0.0.4/dist/kayto.user.js">the github source user script</a> and click &quot;Raw&quot; to prompt the installation.</li>
                 <li>Edit the script preferences and enter the domains/pages where you wish to add the Kayto widget. Note: you can use <code>*</code> as a wildcard to match domains and pages.
-                    <img src="images/prefs.png">
-                    <img src="images/include.png">
+                    <div class="settings">
+                        <img src="images/prefs.png">
+                        <img src="images/include.png">
+                    </div>
                 </li>
             </ol>
         </div>
